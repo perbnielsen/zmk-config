@@ -56,14 +56,14 @@
                 navi_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |     |     |     |     |     |   |     | H_L | FULL| H_R |     | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     | Q_L | HALF| Q_R |     |  '   |
-// | SHFT |     |     |     |     |     |   |     | T_L | T_M | T_R |     |  ~   | // TODO: Fix this row when &mkp is committed
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | Q_L | T_L | HALF| T_R | Q_R |  '   |
+// | SHFT |     |     |     |     |     |   |     |     | T_M |     |     |  ~   | // TODO: Fix this row when &mkp is committed
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &kp  ESC     &trans          &trans          &trans          &trans          &trans                  &trans        &kp LC(LS(LG(L)))       &kp LC(LA(LG(UP)))     &kp LC(LS(LG(R)))       &trans   &kp BSPC
-   &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &trans        &kp LC(LS(LG(LEFT)))    &kp LC(LS(LG(DOWN)))   &kp LC(LS(LG(RIGHT)))   &trans   &kp GRAVE
-   &kp LSHFT    &trans          &trans          &trans          &trans          &trans                  &trans        &kp LC(LA(LG(LEFT)))    &kp LC(LA(LG(DOWN)))   &kp LC(LA(LG(RIGHT)))   &trans   &kp TILDE
-                                                &kp LGUI        &trans          &trans                  &trans        &trans                  &kp RALT
+   &kp  ESC     &trans          &trans          &trans          &trans          &trans                  &trans                  &kp LC(LS(LG(L)))       &kp LC(LA(LG(UP)))     &kp LC(LS(LG(R)))       &trans                  &kp BSPC
+   &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &kp LC(LA(LG(LEFT)))    &kp LC(LS(LG(LEFT)))    &kp LC(LS(LG(DOWN)))   &kp LC(LS(LG(RIGHT)))   &kp LC(LA(LG(RIGHT)))   &kp GRAVE
+   &kp LSHFT    &trans          &trans          &trans          &trans          &trans                  &trans                  &trans                  &kp LC(LA(LG(DOWN)))   &trans                  &trans                  &kp TILDE
+                                                &kp LGUI        &trans          &trans                  &trans                  &trans                  &kp RALT
                         >;
                 };
         };
